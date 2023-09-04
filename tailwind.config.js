@@ -8,7 +8,10 @@ module.exports = {
 ]
   ],
   theme: {
-    extend: {
+    extend: { 
+      transitionDuration: {
+        '2000': '2000ms',
+      },
       colors: {
         'whitiesh': 'rgba(237, 238, 188, 1)',
       },
