@@ -1,0 +1,24 @@
+{
+  "name": "tw-portfolio",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev": "tailwindcss -i ./src/input.css -o ./dist/styles.css --watch"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Sarahsegla/tw-portfolio.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Sarahsegla/tw-portfolio/issues"
+  },
+  "homepage": "https://github.com/Sarahsegla/tw-portfolio#readme",
+  "devDependencies": {
+    "tailwindcss": "^3.3.3"
+  }
+}
