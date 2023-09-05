@@ -5,15 +5,18 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="styles.css">
     <link href="https://cdnjs.cloudflare.com/ajax/libs/flowbite/1.8.1/flowbite.min.css"  rel="stylesheet" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bubbler+One&family=Days+One&family=Meow+Script&display=swap" rel="stylesheet">
     <title>Document</title>
 </head>
 <body>
-    
-<nav class=" bg-whitiesh border-gray-200 ">
+    <!-- bg-whitiesh -->
+<nav class=" bg-inherit border-gray-200 ">
     <div class="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-4">
       
           
-          <span class="self-center text-2xl font-semibold whitespace-nowrap dark:text-black italic">Sarah. S</span>
+          <span class="self-center text-2xl font-['Bubbler-One', sans-serif] whitespace-nowrap dark:text-black ">Sarah. S</span>
       
       <button data-collapse-toggle="navbar-default" type="button" class="inline-flex items-center p-2 w-10 h-10 justify-center text-sm text-gray-500 rounded-lg md:hidden hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200 dark:text-gray-400 dark:hover:bg-gray-700 dark:focus:ring-gray-600" aria-controls="navbar-default" aria-expanded="false">
           <span class="sr-only">Open main menu</span>
@@ -22,9 +25,10 @@
           </svg>
       </button>
       <div class="hidden w-full md:block md:w-auto" id="navbar-default">
-        <ul class="font-medium flex flex-col p-4 md:p-0 mt-4 border bg-whitiesh  md:flex-row md:space-x-8 md:mt-0 md:border-0  ">
+        <!-- bg-whitiesh -->
+        <ul class="font-medium flex flex-col p-4 md:p-0 mt-4 border   md:flex-row md:space-x-8 md:mt-0 md:border-0  ">
           <li>
-            <a href="#" class="block py-2 pl-3 pr-4 text-white md:text-black md:p-0 dark:text-black md:dark:text-black-500" aria-current="page">Home</a>
+            <a href="#" class="block py-2 pl-3 pr-4 text-green-500 md:text-black md:p-0 dark:text-black md:dark:text-black-500" aria-current="page">Home</a>
           </li>
           <li>
             <a href="#" class="block py-2 pl-3 pr-4 hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-green-500 md:p-0 dark:text-black md:dark:hover:text-green-500 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent">About</a>
@@ -58,7 +62,7 @@
         <div class=" space-x-4  -mt-10 flex ...">
             
                 
-            <h1 class="mb-4 text-9xl font-extrabold tracking-tight leading-none text-white md:text-9xl lg:text-9xl " >Hi There, I'm Sarah</h1>
+            <h1 class="mb-4 text-9xl font-extrabold tracking-tight leading-none  md:text-9xl lg:text-9xl text-green-500" >Hi There, I'm Sarah</h1>
             
               <img alt="my picture" src="../Assets/images/Ellipse 1.png" class="h-auto max-w-sm -mt-20 mr-7 reveal">
             
@@ -86,17 +90,24 @@
   </section>
 
   <section>
+    <h2 class="text-center text-6xl my-10">My Projects</h2>
     
-<div id="default-carousel" class="relative w-full" data-carousel="slide">
-    <!-- Carousel wrapper -->
-    <div class="relative h-30 overflow-hidden rounded-lg md:h-96">
-         <!-- Item 1 -->
-        <div class="hidden duration-700 ease-in-out" data-carousel-item>
+    
+<div class="h-56 grid grid-cols-3 gap-4 content-evenly z-40">
+    <section>
+    
+        <div class=" space-x-4   flex ...">
+           
+            <img alt="bubble" src="../Assets/images/Ellipse 5.png" class="pb-4 object-scale-down h-48 w-full animate-pulse">
+        <img alt="bubble" src="../Assets/images/Ellipse 4.png" class="object-scale-down h-48 w-full animate-pulse">
+    </section>
+    <section>
+        <div >
 
 
 
             
-<a href="#" class="flex flex-col items-center bg-white border border-gray-200 rounded-lg shadow md:flex-row md:max-w-xl hover:bg-gray-100 dark:border-gray-700 dark:bg-gray-800 dark:hover:bg-gray-700">
+<a href="#" class=" flex flex-col items-center bg-white border border-gray-200 rounded-lg shadow md:flex-row md:max-w-xl hover:bg-gray-100 dark:border-gray-700 dark:bg-gray-800 dark:hover:bg-gray-700">
     <img class="object-cover w-full rounded-t-lg h-96 md:h-auto md:w-48 md:rounded-none md:rounded-l-lg" src="../Assets/images/weather.png" alt="">
     <div class="flex flex-col justify-between p-4 leading-normal">
         <h5 class="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white">Weather Dashboard using API</h5>
@@ -106,7 +117,20 @@
 
         </div>
         <!-- Item 2 -->
-        <div class="hidden duration-700 ease-in-out" data-carousel-item>
+        <div>
+
+            
+            <a href="#" class="flex flex-col items-center bg-white border border-gray-200 rounded-lg shadow md:flex-row md:max-w-xl hover:bg-gray-100 dark:border-gray-700 dark:bg-gray-800 dark:hover:bg-gray-700">
+                <img class="object-cover w-full rounded-t-lg h-96 md:h-auto md:w-48 md:rounded-none md:rounded-l-lg" src="../Assets/images/phone.png" alt="">
+                <div class="flex flex-col justify-between p-4 leading-normal">
+                    <h5 class="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white">Portfolio Template</h5>
+                    <p class="mb-3 font-normal text-gray-700 dark:text-gray-400">GitHub Repo</p>
+                </div>
+            </a>
+            
+                    </div>
+        <!-- Item 3 -->
+        <div >
 
             
 <a href="#" class="flex flex-col items-center bg-white border border-gray-200 rounded-lg shadow md:flex-row md:max-w-xl hover:bg-gray-100 dark:border-gray-700 dark:bg-gray-800 dark:hover:bg-gray-700">
@@ -118,8 +142,8 @@
 </a>
 
         </div>
-        <!-- Item 3 -->
-        <div class="hidden duration-700 ease-in-out" data-carousel-item>
+        <!-- Item 4 -->
+        <div>
 
             
 <a href="#" class="flex flex-col items-center bg-white border border-gray-200 rounded-lg shadow md:flex-row md:max-w-xl hover:bg-gray-100 dark:border-gray-700 dark:bg-gray-800 dark:hover:bg-gray-700">
@@ -131,8 +155,8 @@
 </a>
 
         </div>
-        <!-- Item 4 -->
-        <div class="hidden duration-700 ease-in-out" data-carousel-item>
+        <!-- Item 5 -->
+        <div>
 
             
 <a href="#" class="flex flex-col items-center bg-white border border-gray-200 rounded-lg shadow md:flex-row md:max-w-xl hover:bg-gray-100 dark:border-gray-700 dark:bg-gray-800 dark:hover:bg-gray-700">
@@ -144,8 +168,8 @@
 </a>
 
         </div>
-        <!-- Item 5 -->
-        <div class="hidden duration-700 ease-in-out" data-carousel-item>
+        <!-- Item 6 -->
+        <div>
 
             
 <a href="#" class="flex flex-col items-center bg-white border border-gray-200 rounded-lg shadow md:flex-row md:max-w-xl hover:bg-gray-100 dark:border-gray-700 dark:bg-gray-800 dark:hover:bg-gray-700">
@@ -157,61 +181,122 @@
 </a>
 
         </div>
-         <!-- Item 6 -->
-         <div class="hidden duration-700 ease-in-out" data-carousel-item>
+         <!-- Item 7 -->
+         <div>
 
             
             <a href="#" class="flex flex-col items-center bg-white border border-gray-200 rounded-lg shadow md:flex-row md:max-w-xl hover:bg-gray-100 dark:border-gray-700 dark:bg-gray-800 dark:hover:bg-gray-700">
                 <img class="object-cover w-full rounded-t-lg h-96 md:h-auto md:w-48 md:rounded-none md:rounded-l-lg" src="../Assets/images/new.png" alt="">
                 <div class="flex flex-col justify-between p-4 leading-normal">
-                    <h5 class="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white">Food Bog</h5>
+                    <h5 class="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white">Food Blog Using React</h5>
                     <p class="mb-3 font-normal text-gray-700 dark:text-gray-400">GitHub Repo</p>
                 </div>
             </a>
             
                     </div>
-                     <!-- Item 7 -->
-        <div class="hidden duration-700 ease-in-out" data-carousel-item>
+                     <!-- Item 8 -->
+        <div>
 
             
             <a href="#" class="flex flex-col items-center bg-white border border-gray-200 rounded-lg shadow md:flex-row md:max-w-xl hover:bg-gray-100 dark:border-gray-700 dark:bg-gray-800 dark:hover:bg-gray-700">
                 <img class="object-cover w-full rounded-t-lg h-96 md:h-auto md:w-48 md:rounded-none md:rounded-l-lg" src="../Assets/images/workday.png" alt="">
                 <div class="flex flex-col justify-between p-4 leading-normal">
-                    <h5 class="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white">JavaScript Quiz</h5>
+                    <h5 class="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white">Work Day Schedule</h5>
                     <p class="mb-3 font-normal text-gray-700 dark:text-gray-400">GitHub Repo</p>
                 </div>
             </a>
             
                     </div>
+                    <!-- Item 9 -->
+        <div>
+
+            
+            <a href="#" class="flex flex-col items-center bg-white border border-gray-200 rounded-lg shadow md:flex-row md:max-w-xl hover:bg-gray-100 dark:border-gray-700 dark:bg-gray-800 dark:hover:bg-gray-700">
+                <img class="object-cover w-full rounded-t-lg h-96 md:h-auto md:w-48 md:rounded-none md:rounded-l-lg" src="../Assets/images/readme.png" alt="">
+                <div class="flex flex-col justify-between p-4 leading-normal">
+                    <h5 class="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white">Professional Readme Generator</h5>
+                    <p class="mb-3 font-normal text-gray-700 dark:text-gray-400">GitHub Repo</p>
+                </div>
+            </a>
+            
+                    </div>
+                    
+                    
     </div>
-    <!-- Slider indicators -->
-    <div class="absolute z-30 flex space-x-3 -translate-x-1/2 bottom-5 left-1/2">
-        <button type="button" class="w-3 h-3 rounded-full" aria-current="true" aria-label="Slide 1" data-carousel-slide-to="0"></button>
-        <button type="button" class="w-3 h-3 rounded-full" aria-current="false" aria-label="Slide 2" data-carousel-slide-to="1"></button>
-        <button type="button" class="w-3 h-3 rounded-full" aria-current="false" aria-label="Slide 3" data-carousel-slide-to="2"></button>
-        <button type="button" class="w-3 h-3 rounded-full" aria-current="false" aria-label="Slide 4" data-carousel-slide-to="3"></button>
-        <button type="button" class="w-3 h-3 rounded-full" aria-current="false" aria-label="Slide 5" data-carousel-slide-to="4"></button>
+    <div class=" space-x-4   flex ...">
+       
+        <img alt="bubble" src="../Assets/images/Ellipse 5.png" class="pb-4 object-scale-down h-48 w-full animate-pulse">
+    <img alt="bubble" src="../Assets/images/Ellipse 5.png" class="object-scale-down h-48 w-full animate-pulse">
     </div>
-    <!-- Slider controls -->
-    <button type="button" class="absolute top-0 left-0 z-30 flex items-center justify-center h-full px-4 cursor-pointer group focus:outline-none" data-carousel-prev>
-        <span class="inline-flex items-center justify-center w-10 h-10 rounded-full bg-white/30 dark:bg-gray-800/30 group-hover:bg-white/50 dark:group-hover:bg-gray-800/60 group-focus:ring-4 group-focus:ring-white dark:group-focus:ring-gray-800/70 group-focus:outline-none">
-            <svg class="w-4 h-4 text-white dark:text-gray-800" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 6 10">
-                <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 1 1 5l4 4"/>
-            </svg>
-            <span class="sr-only">Previous</span>
-        </span>
-    </button>
-    <button type="button" class="absolute top-0 right-0 z-30 flex items-center justify-center h-full px-4 cursor-pointer group focus:outline-none" data-carousel-next>
-        <span class="inline-flex items-center justify-center w-10 h-10 rounded-full bg-white/30 dark:bg-gray-800/30 group-hover:bg-white/50 dark:group-hover:bg-gray-800/60 group-focus:ring-4 group-focus:ring-white dark:group-focus:ring-gray-800/70 group-focus:outline-none">
-            <svg class="w-4 h-4 text-white dark:text-gray-800" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 6 10">
-                <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="m1 9 4-4-4-4"/>
-            </svg>
-            <span class="sr-only">Next</span>
-        </span>
-    </button>
-</div>
 
   </section>
+<div>
+    
+
+
+   
+</div>
+<section>
+    <div class=" space-x-4   flex z-30">
+        <img alt="bubble" src="../Assets/images/Ellipse 3.png" class="pb-4 object-scale-down h-auto max-w-full animate-pulse z-30">
+        <img alt="bubble" src="../Assets/images/Ellipse 5.png" class="pb-4 object-scale-down h-48 w-full animate-pulse">
+    
+
+ 
+
+</section>
+<section>
+    
+    <div class=" space-x-4   flex ...">
+       
+        <img alt="bubble" src="../Assets/images/Ellipse 5.png" class="pb-4 object-scale-down h-48 w-full animate-pulse">
+    <img alt="bubble" src="../Assets/images/Ellipse 4.png" class="object-scale-down h-auto max-w-full animate-pulse">
+    </div>
+</section>
+<section>
+    
+    <div class=" space-x-4   flex ...">
+       
+        <img alt="bubble" src="../Assets/images/Ellipse 4.png" class="pb-4 object-scale-down h-48 w-full animate-pulse">
+    <img alt="bubble" src="../Assets/images/Ellipse 5.png" class="object-scale-down h-48 w-full animate-pulse">
+    </div>
+</section>
+<section>
+
+    <h2 class="text-center text-6xl ">Contact Me</h2>
+    
+<section class="bg-center  bg-[url('https://media.tenor.com/bajOaNcbeSoAAAAi/green-circle-symbols.gif')] ">
+    <div class="px-4 mx-auto max-w-screen-xl text-center py-24 lg:py-56">
+        <img  alt="filled bubble" src="../Assets/images/filled2.png" class="object-scale-down h-48 w-full animate-pulse "></img>
+        <form action="https://formsubmit.co/sarahsegla@icloud.com" method="POST">
+            <label for="name">Name:</label>
+            <input type="text" name="name" placeholder="Jane Doe" required>
+            <br>
+            <label for="email">Email:</label>
+            <input type="email" name="email" placeholder="Email@email.com" required>
+            <br>
+            <label for="message">Message:</label>
+            <input type="text" name="message" placeholder="Hi Jane Doe..." required />
+            <br>
+            <button type="submit" type="button" class="text-gray-900 bg-gradient-to-r from-teal-200 to-lime-200 hover:bg-gradient-to-l hover:from-teal-200 hover:to-lime-200 focus:ring-4 focus:outline-none focus:ring-lime-200 dark:focus:ring-teal-700 font-medium rounded-lg text-sm px-5 py-2.5 text-center mr-2 mb-2">Send</button>
+       </form>
+       <img  alt="filled bubble" src="../Assets/images/filled.png" class="object-scale-down h-48 w-full animate-pulse"></img>
+    </div>
+</section>
+
+    
+</section>
+
+
+<footer class="bg-white rounded-lg shadow dark:bg-gray-900 m-4 ">
+    <div class="w-full max-w-screen-xl mx-auto p-4 md:py-8">
+        
+        <hr class="my-6 border-gray-200 sm:mx-auto dark:border-gray-700 lg:my-8" />
+        <span class="block text-sm text-gray-500 sm:text-center dark:text-gray-400">© 2023 <a href="https://flowbite.com/" class="hover:underline">Sarah S</a>. All Rights Reserved.</span>
+    </div>
+</footer>
+
+
   
   <script src="../path/to/flowbite/dist/flowbite.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/flowbite/1.8.1/flowbite.min.js"></script>

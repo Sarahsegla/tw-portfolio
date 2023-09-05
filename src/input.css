@@ -14,3 +14,9 @@
         opacity: 1;
     }
 }
+
+@layer base {
+    html {
+      font-family:  'Bubbler One', sans-serif;
+    }
+  }
